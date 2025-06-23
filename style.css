@@ -1,0 +1,91 @@
+/* Hero Section */
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.navbar,#about,footer {
+   background: linear-gradient(90deg, #1e3c72, #2a5298); /* Example */
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff !important;  /* Pure white */
+}
+
+.navbar .nav-link:hover {
+    color: #ffee58 !important;  /* Soft golden yellow on hover */
+    text-decoration: underline;
+}
+/* Features Section */
+.features-section {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 60px 20px;
+}
+
+    .features-section i {
+        color: #ffeb3b; /* Couleur dorée pour les icônes */
+        margin-bottom: 10px;
+    }
+
+
+
+/* Gallery Section */
+.card img {
+    object-fit: fill;  /* Stretches the image to fill the rectangle */
+    height: 300px;      /* Adjust the height as needed */
+    width: 100%;        /* Ensures the image spans the full width */
+}
+
+/* Carousel Image */
+.carousel-item img {
+    object-fit: fill;  /* Stretches the image to fill the container */
+    max-height: 500px;  /* Adjust the maximum height as needed */
+    width: 100%;        /* Ensure the image spans the entire width */
+}
+
+#gallery {
+    padding-top: 80px;  /* Add some padding to push the content down */
+    margin-top: 70px;    /* Optional, but can be adjusted if necessary */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/* Navbar fixed to the top */
+.navbar {
+    z-index: 1000;
+}
+
+/* Change the background color and arrow color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    border-radius: 50%; /* Optional: makes the background circular */
+}
+
+/* Optional: Customize the arrows when hovered */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+
+/* Footer Section */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 1000;
+}
+
+/* Ensure the body content doesn't overlap with the footer */
+body {
+    padding-bottom: 30px;  /* Adjust this based on your footer height */
+}
+
